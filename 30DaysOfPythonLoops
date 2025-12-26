@@ -1,0 +1,16 @@
+#L3
+#utilising indexing
+
+
+countries_with_land = []
+for i in range(len(countries)):
+  if 'land' in countries[i]:
+    countries_with_land.append(countries[i])
+print(countries_with_land)
+
+
+#calling items direction
+for country in countries:
+  if 'land' in country:
+    countries_with_land.append(countries[i])
+print(countries_with_land)
