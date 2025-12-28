@@ -31,3 +31,13 @@ def solve_quadratic_eqn(a,b,c):
 solve_quadratic_eqn(2,5,4)
 
 #note that we can import math or cmath (complex maths) to use general methods like square roots!
+
+def capitalise(clist):
+  capitalised_list= []
+  for item in clist:
+    capitalised_list.append(item.capitalize())
+  return capitalised_list
+
+print(capitalise(['hello','goodbye']))
+
+#note American spelling - captilize
