@@ -9,9 +9,10 @@ def random6():
   possibleLetters = string.ascii_letters+string.digits
   string6 = ''
   for i in range(6):
-    string6 = string6 + (possibleLetters[randint(0,len(possibleLetters))])
+    string6 = string6 + (possibleLetters[randint(0,len(possibleLetters)-1)])
   return string6
 
 print(random6())
 
 #Note that you cannot "append" to a string so you need to join it on (+)
+#The len of possible letters can actually go past the entire length of possible letters because the 1st char in the string starts at 0!
