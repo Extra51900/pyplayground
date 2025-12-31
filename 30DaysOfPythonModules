@@ -1,0 +1,17 @@
+import string
+import random
+
+
+from random import *
+from string import *
+
+def random6():
+  possibleLetters = string.ascii_letters+string.digits
+  string6 = ''
+  for i in range(6):
+    string6 = string6 + (possibleLetters[randint(0,len(possibleLetters))])
+  return string6
+
+print(random6())
+
+#Note that you cannot "append" to a string so you need to join it on (+)
